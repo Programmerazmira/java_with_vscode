@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Product {
     public static void main(String[] args) {
         System.out.println("category: phone");
@@ -18,8 +20,34 @@ public class Product {
         System.out.println("title= "+t);
         System.out.println("title= "+p);
         System.out.println("title= "+d);
-        
 
+
+
+        try(Scanner input = new Scanner(System.in);){
+
+            String catagory,title,descript;
+            int Id ,price;
+
+            System.out.print("Catagory: ");
+            catagory=input.nextLine();
+            System.out.print("ID: ");
+            Id=input.nextInt();
+            input.nextLine();
+            System.out.print("Title: ");
+            title=input.nextLine();
+            System.out.print("Price: ");
+            price=input.nextInt();
+            input.nextLine();
+            System.out.print("Description: ");
+            descript=input.nextLine();
+
+            System.out.println("Your Catagory: "+catagory);
+            System.out.println("Product ID: "+Id);
+            System.out.println("Product title: "+title);
+            System.out.println("Product Price: "+price+"taka");
+            System.out.println("Description: "+descript);
+
+        }
 
 
 
