@@ -7,7 +7,7 @@ public class installmentAmount {
       int phonePrice = 1800; // 1800 euros
       int numberOfInstallment, installmentPerMonth;
 
-      System.out.print("Number of installments? ");
+      System.out.print("Number of installments");
       // get number of installments from user
       numberOfInstallment=input.nextInt();
 
@@ -15,6 +15,7 @@ public class installmentAmount {
       installmentPerMonth=phonePrice*numberOfInstallment*30;
     
 
+      //Monthly installment Amount
         System.out.println("Monthly installment Amount: "+installmentPerMonth + " euros");
     } 
 
